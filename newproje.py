@@ -8,7 +8,6 @@ utc_zaman_dilimi_str = 'UTC'
 turkiye_zaman_dilimi_str = 'Europe/Istanbul'
 new_york_zaman_dilimi_str = 'America/New_York'
 tokyo_zaman_dilimi_str = 'Asia/Tokyo'
-kolkata_zaman_dilimi_str = 'Asia/Kolkata'
 domain_suresi_bitis_tarihi_str = "2024-10-04 10:00"
 
 
