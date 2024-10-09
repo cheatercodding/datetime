@@ -20,3 +20,6 @@ domain_expire_date_utc = utc_timezone.localize(domain_expire_date)
 # UTC olan tarihi Türkiye zaman dilimine çevir
 domain_expire_date_turkey = domain_expire_date_utc.astimezone(turkey_timezone)
 
+# Sonuçları yazdır
+print(f"Domain Süresi Bitiş Tarihi (UTC): {domain_expire_date_utc}")
+print(f"Domain Süresi Bitiş Tarihi (Türkiye): {domain_expire_date_turkey}")
