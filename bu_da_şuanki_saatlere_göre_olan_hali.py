@@ -18,6 +18,12 @@ new_york_zaman_dilimi = pytz.timezone(new_york_zaman_dilimi_str)
 current_time = datetime.datetime.now()
 current_time_utc = utc_timezone.localize(current_time)
 
+# UTC olan zamanı Türkiye ve New York zaman dilimlerine çevrilmesi
+current_time_turkey = current_time_utc.astimezone(turkey_timezone)
+current_time_new_york = current_time_utc.astimezone(new_york_zaman_dilimi)
+
+
+
 
 
 
