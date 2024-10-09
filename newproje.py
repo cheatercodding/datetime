@@ -15,7 +15,7 @@ utc_zaman_dilimi = pytz.timezone(utc_zaman_dilimi_str)
 turkiye_zaman_dilimi = pytz.timezone(turkiye_zaman_dilimi_str)
 new_york_zaman_dilimi = pytz.timezone(new_york_zaman_dilimi_str)
 tokyo_zaman_dilimi = pytz.timezone(tokyo_zaman_dilimi_str)
-kolkata_zaman_dilimi = pytz.timezone(kolkata_zaman_dilimi_str)
+
 
 
 # Domain süresi bitiş tarihini string'den datetime nesnesine çevir
@@ -31,7 +31,7 @@ domain_suresi_bitis_utc = utc_zaman_dilimi.localize(domain_suresi_bitis_tarihi)
 domain_suresi_bitis_turkiye = domain_suresi_bitis_utc.astimezone(turkiye_zaman_dilimi)
 domain_suresi_bitis_new_york = domain_suresi_bitis_utc.astimezone(new_york_zaman_dilimi)
 domain_suresi_bitis_tokyo = domain_suresi_bitis_utc.astimezone(tokyo_zaman_dilimi)
-domain_suresi_bitis_kolkata = domain_suresi_bitis_utc.astimezone(kolkata_zaman_dilimi)
+
 
 
 
