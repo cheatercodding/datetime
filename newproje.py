@@ -22,6 +22,10 @@ kolkata_zaman_dilimi = pytz.timezone(kolkata_zaman_dilimi_str)
 domain_suresi_bitis_tarihi = datetime.datetime.strptime(domain_suresi_bitis_tarihi_str, '%Y-%m-%d %H:%M')
 
 
+# Domain bitiş tarihini UTC zaman diliminde ayarla
+domain_suresi_bitis_utc = utc_zaman_dilimi.localize(domain_suresi_bitis_tarihi)
+
+
 
 
 
