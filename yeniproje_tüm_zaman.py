@@ -1,6 +1,6 @@
 import datetime
 import pytz
 
-# Tüm zaman dilimlerini al
+# Tüm zaman dilimleri
 tüm_zaman_dilimleri = pytz.all_timezones
 
