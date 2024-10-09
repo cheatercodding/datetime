@@ -10,6 +10,9 @@ for zaman_dilimi_str in tüm_zaman_dilimleri:
 
     # Zaman diliminde şu anki zamanı alınması
     current_time = datetime.datetime.now(zaman_dilimi)
+       
+        # Sonuçları yazdırılması
+    print(f"Zaman Dilimi: {zaman_dilimi_str} | Şu Anki Zaman: {current_time}")
     
 
     
