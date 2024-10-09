@@ -38,6 +38,12 @@ print(f"Domain Süresi Bitiş Tarihi (Türkiye): {domain_suresi_bitis_turkiye}")
 print(f"Domain Süresi Bitiş Tarihi (New York): {domain_suresi_bitis_new_york}")
 print(f"Domain Süresi Bitiş Tarihi (Tokyo): {domain_suresi_bitis_tokyo}")
 
+# Tüm zaman dilimlerini yazdır
+print("\nMevcut zaman dilimleri:")
+for zaman_dilimi in pytz.all_timezones:
+    print(zaman_dilimi)
+
+
 
 
 
