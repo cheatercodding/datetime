@@ -22,6 +22,10 @@ current_time_utc = utc_timezone.localize(current_time)
 current_time_turkey = current_time_utc.astimezone(turkey_timezone)
 current_time_new_york = current_time_utc.astimezone(new_york_zaman_dilimi)
 
+# Sonuçları yazdırma
+print(f"Şu Anki Zaman (UTC): {current_time_utc}")
+print(f"Şu Anki Zaman (Türkiye): {current_time_turkey}")
+print(f"Şu Anki Zaman (New York): {current_time_new_york}")
 
 
 
