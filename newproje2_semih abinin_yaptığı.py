@@ -15,3 +15,8 @@ domain_expire_date = datetime.datetime.strptime(domain_expire_date_str, '%Y-%m-%
 
 # Domain bitiş tarihini UTC zaman diliminde ayarla
 domain_expire_date_utc = utc_timezone.localize(domain_expire_date)
+
+
+# UTC olan tarihi Türkiye zaman dilimine çevir
+domain_expire_date_turkey = domain_expire_date_utc.astimezone(turkey_timezone)
+
