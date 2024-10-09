@@ -18,6 +18,11 @@ tokyo_zaman_dilimi = pytz.timezone(tokyo_zaman_dilimi_str)
 kolkata_zaman_dilimi = pytz.timezone(kolkata_zaman_dilimi_str)
 
 
+# Domain süresi bitiş tarihini string'den datetime nesnesine çevir
+domain_suresi_bitis_tarihi = datetime.datetime.strptime(domain_suresi_bitis_tarihi_str, '%Y-%m-%d %H:%M')
+
+
+
 
 
 
