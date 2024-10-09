@@ -13,3 +13,5 @@ turkey_timezone = pytz.timezone(turkey_timezone_str)
 # Domain süresi bitiş tarihini string'den datetime nesnesine çevir
 domain_expire_date = datetime.datetime.strptime(domain_expire_date_str, '%Y-%m-%d %H:%M')
 
+# Domain bitiş tarihini UTC zaman diliminde ayarla
+domain_expire_date_utc = utc_timezone.localize(domain_expire_date)
