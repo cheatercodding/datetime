@@ -4,7 +4,7 @@ import pytz
 # Zaman dilimi tanımlamaları
 utc_timezone_str = 'UTC'
 turkey_timezone_str = 'Europe/Istanbul'
-New_york_timezone_str='America/New_york'
+new_york_zaman_dilimi_str = 'America/New_York'
 domain_expire_date_str = "2024-10-04 10:00"
 
 # Zaman dilimlerini oluştur
@@ -21,7 +21,7 @@ domain_expire_date_utc = utc_timezone.localize(domain_expire_date)
 
 # UTC olan tarihi Türkiye zaman dilimine çevir
 domain_expire_date_turkey = domain_expire_date_utc.astimezone(turkey_timezone)
-domain_suresi_bitis_new_york = domain_suresi_bitis_utc.astimezone(new_york_zaman_dilimi)
+domain_suresi_bitis_new_york = domain_expire_date_utc.astimezone(new_york_zaman_dilimi)
 
 # Sonuçları yazdır
 print(f"Domain Süresi Bitiş Tarihi (UTC): {domain_expire_date_utc}")
