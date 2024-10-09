@@ -32,6 +32,15 @@ domain_suresi_bitis_turkiye = domain_suresi_bitis_utc.astimezone(turkiye_zaman_d
 domain_suresi_bitis_new_york = domain_suresi_bitis_utc.astimezone(new_york_zaman_dilimi)
 domain_suresi_bitis_tokyo = domain_suresi_bitis_utc.astimezone(tokyo_zaman_dilimi)
 
+# Sonuçları ekrana yazdır
+print(f"Domain Süresi Bitiş Tarihi (UTC): {domain_suresi_bitis_utc}")
+print(f"Domain Süresi Bitiş Tarihi (Türkiye): {domain_suresi_bitis_turkiye}")
+print(f"Domain Süresi Bitiş Tarihi (New York): {domain_suresi_bitis_new_york}")
+print(f"Domain Süresi Bitiş Tarihi (Tokyo): {domain_suresi_bitis_tokyo}")
+
+
+
+
 
 
 
